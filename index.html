@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+    <script src="app.js"></script>
+    <link rel="icon" href="data.jpg">
+  </head> 
+<!--********Body starts*************        -->
+  <body>
+      <div class="form-inline">
+    <input type = 'text' id='test' placeholder='Date' class='form-control ml-2 mt-3'>
+    <button class="btn btn-info ml-2 mt-3" id="button" onclick="table()">Enter</button>
+    <button class="btn btn-info ml-2 mt-3" id="button" onclick="clear()">Clear</button>
+      </div>
+      <br>
+    <div id="clear" class="container">
+        <table class="table">
+            <thead>
+            <tr>
+<!--            <th scope="col">Id</th>-->
+            <th scope="col">User</th>
+            <th scope="col">login</th>
+            <th scope="col">logout</th>
+            <th scope="col">total</th>
+            <th scope="col">lunch</th>
+            <th scope="col">break</th>
+            <th scope="col">project</th>
+          </tr>
+        </thead>
+        <tbody id="table">
+          <tr>
+            <th scope="row">1</th>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+
+
+
+ 
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkN pZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
