@@ -33,7 +33,8 @@ function table () {
         <td>${doc.data().User.email}</td>
         <td>${doc.data().User.login}</td>
         <td>${doc.data().User.logout}</td>
-        <td>${doc.data().User.total}</td>
+        <td>${doc.data().User.totalTime}</td>
+        <td>${doc.data().User.available}</td>
         <td>${doc.data().User.lunch}</td>
         <td>${doc.data().User.break}</td>
         <td>${doc.data().User.project}</td>
@@ -44,7 +45,7 @@ function table () {
 
 function clear () {
   console.log('clear');
-  document.getElementById('clear').style.display = 'none';
+  document.getElementById('table').innerHTML = ' ';
 }
       
   
