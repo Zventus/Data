@@ -27,17 +27,13 @@ function table () {
   db.collection(query).get().then((querySnapshot) => {
       table.innerHTML = '';
     querySnapshot.forEach((doc) => {
-        console.log(`${doc.id} => ${doc.data().first}`);
+        console.log(`${doc.id} => ${doc.data().Total.Available}`);
         table.innerHTML += 
     `<tr>
-        <td>${doc.data().User.email}</td>
-        <td>${doc.data().User.login}</td>
-        <td>${doc.data().User.logout}</td>
-        <td>${doc.data().User.totalTime}</td>
-        <td>${doc.data().User.available}</td>
-        <td>${doc.data().User.lunch}</td>
-        <td>${doc.data().User.break}</td>
-        <td>${doc.data().User.project}</td>
+        <td>${doc.id}</td>
+        <td>${doc.data().Total.Available}</td>
+        <td>${doc.data().Total.Break}</td>
+        
       </tr>`
     });
   });
